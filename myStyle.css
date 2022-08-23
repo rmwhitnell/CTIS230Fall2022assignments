@@ -1,12 +1,60 @@
+* {
+    border: 0.1em dotted brown;
+}
+
 body {
     background-color: seashell;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-right:15%;
-    margin-left:15%;
+    margin-right:10%;
+    margin-left:10%;
+    font-size: 2.25vw;
+}
+
+li, div.workdesc {
+    margin-bottom: 6px;
+}
+
+div.address, div.degree {
+    margin-left: 3%;
 }
 
 h2 {
-    background-color: lightsalmon;
+    background-color: rgb(240, 227, 215);
     width: fit-content;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+li ul li { 
+    font-size: 80%
+}
+
+li ul:hover {
+    font-size:150%;
+}
+
+span.thesistitle {
+    font-weight:bolder;
+    font-size: 90%;
+    color: midnightblue;
+}
+
+img#chemedimg {
+    float: right;
+    width: 20%;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+ol li.float {
+    float: left;
+    width: 30%;
+    background-color: lavender;
+    margin-right: 2em;
+}
