@@ -4,17 +4,19 @@
 
 body {
     background-color: seashell;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-right:10%;
-    margin-left:10%;
-    font-size: 2.25vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 1.25em;
 }
 
-li, div.workdesc {
+li,
+div.workdesc {
     margin-bottom: 6px;
 }
 
-div.address, div.degree {
+div.address,
+div.degree {
     margin-left: 3%;
 }
 
@@ -31,16 +33,16 @@ a:hover {
     color: lightskyblue;
 }
 
-li ul li { 
+li ul li {
     font-size: 80%
 }
 
 li ul:hover {
-    font-size:150%;
+    font-size: 150%;
 }
 
 span.thesistitle {
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: 90%;
     color: midnightblue;
 }
@@ -57,4 +59,22 @@ ol li.float {
     width: 30%;
     background-color: lavender;
     margin-right: 2em;
+}
+
+div.courses {
+    
+    display: flex;
+    /* border: 2px dotted green; */
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    width: 80%
+}
+
+div.coursetaught {
+    /* border: 1px solid brown; */
+    margin-top: 6px;
+    width: 25%;
+    margin-right: 2%;
+    margin-bottom: 3px;
+    text-align: center;
 }
