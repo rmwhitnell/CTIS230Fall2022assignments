@@ -25,6 +25,10 @@ h2 {
     width: fit-content;
 }
 
+h2#bigname { 
+    display:none;
+}
+
 a {
     text-decoration: none;
 }
@@ -54,12 +58,6 @@ img#chemedimg {
     margin-bottom: 1em;
 }
 
-ol li.float {
-    float: left;
-    width: 30%;
-    background-color: lavender;
-    margin-right: 2em;
-}
 
 div.courses {
     
@@ -77,4 +75,56 @@ div.coursetaught {
     margin-right: 2%;
     margin-bottom: 3px;
     text-align: center;
+}
+
+/* media queries for responsive design */
+/* Ask the browser to identify the properties of the media that 
+the content is being displayed on and change the CSS rules accordingly */
+
+/* As long as the width of the viewport is less than 750px, implement
+whatever rules are present in this media query */
+@media (max-width : 750px) {
+    body {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    h2 {
+        width: 60%;
+        font-size: 115%;
+    }
+}
+/* As long as the width of the viewport is greater than
+the specifid value, then apply this rule*/
+@media (min-width: 750px) {
+    ol li.float {
+        float: left;
+        width: 30%;
+        background-color: lavender;
+        margin-right: 2em;
+    }
+    
+}
+
+/* change the background color for landscape */
+@media screen and (orientation: landscape) {
+    body {
+        background-color: lightcyan;
+    }
+
+    h2#bigname {
+        display:block;
+    }
+
+    h2#normalname {
+        display:none;
+    }
+
+}
+
+@media (min-width: 389) and (max-width: 391) and
+(min-height: 843) and (max-height: 845) {
+    body {
+        display:none;
+    }
 }
