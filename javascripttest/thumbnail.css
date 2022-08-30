@@ -4,6 +4,6 @@ div#largeview {
     left: 200px;
 }
 
-div.dontshow {
+.dontshow {
     display:none;
 }
