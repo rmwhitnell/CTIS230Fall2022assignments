@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>JavaScript testing</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="testjs.css">
-    <script src="testjs.js" defer></script>
-  </head>
-  <body>
-    <h1 id="header">Some generic text</h1>
-    <p id="newtext">And some other random text</p>
-    <button id="mybutton">The button</button>
-    <input type="text" id="myinput" value="Text">
-    
-    <div id="card">
-      <img id="cardimage" src="images/2_of_clubs.png">
-    </div>
 
-  </body>
+<head>
+  <title>JavaScript testing</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="testjs.css">
+  <script src="testjs.js" defer></script>
+</head>
+
+<body>
+  <h1 id="header">Some generic text</h1>
+  <p id="newtext">And some other random text</p>
+  <button id="mybutton">The button</button>
+  <input type="text" id="myinput" value="Text">
+
+  <div id="card">
+    <img id="cardimage" src="images/2_of_clubs.png">
+  </div>
+
+  <div id="embeddedmedia">
+    <div><video src="images/diborane.mp4" id="boranevideo" controls  loop>Your browser does not
+        support HTML5 video. Use <a href="images/diborane.mp4">this link</a> to download the video.
+      </video></div>
+    <div><audio src="images/jeopardy.mp3" id="jeopardyaudio" controls>Your browser does not
+        support HTML5 audio. Use <a href="images/jeopardy.mp3">this link</a> to download the audio.</audio>
+    </div>
+  </div>
+
+  <div>All the McDonald's locations in Switzerland
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1400363.7324257444!2d6.7044008922155385!3d46.723776778059104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smcdonalds%20in%20switzerland!5e0!3m2!1sen!2sus!4v1661974218788!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fgm14D1jHUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
+
+</body>
+
 </html>

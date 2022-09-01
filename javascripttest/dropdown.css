@@ -1,0 +1,39 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+}
+
+div#navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /* border: 1px dotted brown; */
+    /* fix the navigation bar at the top of the viewport */
+    position: fixed;
+    top: 0;
+    height: 1.25em;
+}
+
+div.nav {
+    width: 30%;
+    text-align: center;
+}
+
+/* By default, hide any dropdown menu item */
+div.nav div.dropdownitem a {
+    display:none;
+    text-decoration: none;
+    color: green;
+    padding: 4px 4px;
+    text-align:left;
+    position: relative;
+    left: 25%;
+    box-shadow: 1px 1px gray;
+    width:60%;
+}
+
+/* When the user hovers over the nav element, show the dropdown items */
+
+div.nav:hover div.dropdownitem a {
+    display:block;
+}
