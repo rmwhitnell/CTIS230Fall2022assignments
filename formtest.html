@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form testing</title>
+        <script src="formtest.js" defer></script>
+    </head>
+    <body>
+        <!-- formfunction in the JavaScript file should run when the user 
+        presses Submit -->
+        <form onsubmit="return formfunction()" action='return null'>
+            <div><label>Enter a value</label>
+                <input id="mytext" name="value" type="text">
+            </div>
+            <div><label>My checkbox</label>
+                <input name="checked" type="checkbox">
+            </div>
+            <div><label>A password</label>
+                <div><input name="password" type="password"></div>
+            </div>
+            <div><input type="submit"></div>
+            <div><input type="reset"></div>
+        </form>
+    </body>
+</html>
