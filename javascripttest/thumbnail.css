@@ -7,3 +7,12 @@ div#largeview {
 .dontshow {
     display:none;
 }
+
+div#card2:hover {
+    width: fit-content;
+    content: url(images/2_of_clubs_small.png);
+}
+
+div#gifview, img#staticview {
+    transform: translate(300px, 0px) skew(20deg, 10deg);
+}

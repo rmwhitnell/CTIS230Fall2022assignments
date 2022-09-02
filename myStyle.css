@@ -22,9 +22,26 @@ div.degree {
     margin-left: 3%;
 }
 
+
+div.college {
+    position: absolute;
+    visibility: hidden;
+    top: 50px;
+    left: 150px;
+    transition-property:visibility;
+    transition-duration: 0.2s;
+}
+
+div.college iframe {
+    box-shadow: 10px 10px 5px 0 rgba(0,80,80,0.75);
+}
+
 h2 {
     background-color: rgb(240, 227, 215);
     width: fit-content;
+    /* transform: translate(50px, -20px);
+    transform: rotate(0.5turn); */
+    /* transform: skew(-20deg, -5deg); */
 }
 
 h2#bigname { 
@@ -33,10 +50,16 @@ h2#bigname {
 
 a {
     text-decoration: none;
+    transition-property:border-bottom color;
+    /* transition-property: color; */
+    transition-duration:0.3s;
+    border-bottom: 2px solid transparent;
 }
 
 a:hover {
     color: lightskyblue;
+    /* text-decoration:underline; */
+    border-bottom: 2px solid royalblue;
 }
 
 li ul li {
@@ -67,7 +90,8 @@ div.courses {
     /* border: 2px dotted green; */
     flex-wrap: wrap-reverse;
     justify-content: space-around;
-    width: 80%
+    width: 80%;
+    transform: scale(0.7, 0.7);
 }
 
 div.coursetaught {
